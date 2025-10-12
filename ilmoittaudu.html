@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <title>Ilmoittaudu tapahtumiin</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Etusivu</a></li>
+      <li><a href="tapahtumat.html">Tapahtumat</a></li>
+      <li><a href="ilmoittaudu.html">Ilmoittaudu</a></li>
+      <li><a href="galleria.html">Galleria</a></li>
+      <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+    </ul>
+  </nav>
+
+  <h1 class="title strong">Ilmoittaudu tapahtumaan</h1>
+  <form method="post" action="./submit.html">
+    <label for="nimi">Nimi:</label><br>
+    <input type="text" id="nimi" name="nimi" required><br><br>
+
+    <label for="sahkoposti">Sähköposti:</label><br>
+    <input type="email" id="sahkoposti" name="sahkoposti" required><br><br>
+
+    <label for="tapahtuma">Valitse tapahtuma:</label><br>
+    <select id="tapahtuma" name="tapahtuma">
+      <option value="syksy">Syksyn ryyppyreissu</option>
+      <option value="syysloma">Syysloman ryyppyreissu</option>
+    </select><br><br>
+
+    <label for="lisatiedot">Lisätiedot:</label><br>
+    <textarea id="lisatiedot" name="lisatiedot" rows="4"></textarea><br><br>
+
+    <button type="submit">Lähetä</button>
+  </form>
+  <script src="assets/js/script.js" defer></script>
+</body>
+</html>
